@@ -10,7 +10,7 @@ Build backend APIs that will help the restaurant owners achieve this goal.
 
 
 DATA SOURCE:
-CSV files be found in /StoreProject/CSV_data
+CSV files be found in  /StoreProject/CSV_data
 
 We poll every store roughly every hour and have data about whether the store was active or not in a CSV.The CSV has 3 columns (store_id, timestamp_utc, status) where status is active or inactive. All timestamps are in UTC.
 We have the business hours of all the stores - schema of this data is store_id, dayOfWeek(0=Monday, 6=Sunday), start_time_local, end_time_local.These times are in the local time zone.

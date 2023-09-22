@@ -1,14 +1,15 @@
-STORE-MONITORING-PROJECT
+STORE-MONITORING-PROJECT:
+
 A backend system built using Python Django framework and MySQL database to monitor the status(online/offline) of several restaurants in the US. The system keep the tracks whether the stores are online or not during their business hours and provides restaurant owners with detailed reports on store uptime and downtime.
 
 
-PROBLEM STATEMENT
+PROBLEM STATEMENT:
 
 This system monitors several restaurants in the US and needs to monitor if the store is online or not. All restaurants are supposed to be online during their business hours.Due to some unknown reasons, a store might go inactive for a few hours.Restaurant owners want to get a report of the how often this happened in the past.
 Build backend APIs that will help the restaurant owners achieve this goal.
 
 
-DATA SOURCE
+DATA SOURCE:
 CSV files be found in /StoreProject/CSV_data
 
 We poll every store roughly every hour and have data about whether the store was active or not in a CSV.The CSV has 3 columns (store_id, timestamp_utc, status) where status is active or inactive. All timestamps are in UTC.
@@ -37,7 +38,8 @@ LOGIC(Uptime & Downtime):
 11.Same logic has been applied for last one hour and last one week uptime and downtime.
 
 
-APIs
+APIs:
+
 Trigger Report- Request GET
 1. /trigger_report endpoint that will trigger report generation from the data (stored in DB)
     1. No input 
@@ -45,12 +47,17 @@ Trigger Report- Request GET
     3. report_id is used for polling the status of report completion
 
 Get Report - Request POST
+
 2. /get_report endpoint that will return the status of the report or the csv
     1. Input - report_id
     2. Output
-        - if report generation is not complete, return “Running” as the output
-        - if report generation is complete, return “Complete” along with the CSV file
+        >if report generation is not complete, return “Running” as the output
+        >if report generation is complete, return “Complete” along with the CSV file
+
+        
 TECH-TOOLS-USED:
 Python Django rest framework and MySQL databse
+
+
 
 Note: Project is ongoing(resolving minor server issues)

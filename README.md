@@ -58,6 +58,12 @@ Get Report - Request POST
 TECH-TOOLS-USED:
 Python Django rest framework and MySQL databse
 
+SERVER:
+to start the server, run the following command in project directory:
+python manage.py runserver
+
+The server will start running on
+http://localhost:8000
 
 
 Note: Project is ongoing(resolving minor server issues)

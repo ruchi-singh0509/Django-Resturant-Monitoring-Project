@@ -65,5 +65,6 @@ python manage.py runserver
 The server will start running on
 http://localhost:8000
 
+website:http://127.0.0.1:3000/StoreProject/README.html
 
 Note: Project is ongoing(resolving minor server issues)
